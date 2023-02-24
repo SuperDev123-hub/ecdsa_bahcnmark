@@ -6,7 +6,7 @@ use std::env;
 fn main() {
     let mut message = String::from("Hello world!");
 
-    let args: Vec = env::args().collect();
+    let args: Vec<_> = env::args().collect();
     if args.len() > 1 {
         message = args[1].clone();
     }
